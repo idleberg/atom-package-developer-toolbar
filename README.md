@@ -40,9 +40,11 @@ $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-d
 
 Toggle and position the menu from the `Packages > Toolbar` menu.
 
-### Available Buttons
+### The tool-bar
 
 ![Screenshot](https://raw.githubusercontent.com/idleberg/atom-package-developer-toolbar/master/screenshot.png)
+
+Icons from left to right:
 
 * [Package Generator](https://atom.io/packages/package-generator)
   * Generate Package
