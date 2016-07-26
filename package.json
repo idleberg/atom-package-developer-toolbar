@@ -1,6 +1,6 @@
 {
   "name": "package-developer-toolbar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A toolbar targeted at developers of Atom packages and syntax themes",
   "license": "MIT",
   "main": "./lib/tool-bar",
