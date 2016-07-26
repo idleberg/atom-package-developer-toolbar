@@ -50,7 +50,6 @@ module.exports =
 
     @toolBar.addSpacer()
 
-
     @toolBar.addButton
         icon: 'gear-a'
         callback: 'window:toggle-dev-tools'
