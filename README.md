@@ -10,8 +10,6 @@
 
 A toolbar targeted at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
 
-![Screenshot](https://raw.githubusercontent.com/idleberg/atom-package-developer-toolbar/master/screenshot.png)
-
 ## Installation
 
 ### apm
@@ -43,6 +41,8 @@ $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-d
 Toggle and position the menu from the `Packages > Toolbar` menu.
 
 ### Available Buttons
+
+![Screenshot](https://raw.githubusercontent.com/idleberg/atom-package-developer-toolbar/master/screenshot.png)
 
 * [Package Generator](https://atom.io/packages/package-generator)
   * Generate Package
