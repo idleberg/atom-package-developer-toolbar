@@ -54,6 +54,7 @@ Buttons from left to right:
 * Reveal File²
 * Toggle Developer Tools
 * Show Settings
+* Open Your Config
 * Run Package Specs
 * Reload Window
 

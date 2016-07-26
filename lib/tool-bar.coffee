@@ -50,15 +50,19 @@ module.exports =
     @toolBar.addSpacer()
 
     @toolBar.addButton
-      icon: 'gear-a'
+      icon: 'terminal'
       callback: 'window:toggle-dev-tools'
       tooltip: 'Toggle Developer Tools'
-      iconset: 'ion'
 
     @toolBar.addButton
       icon: 'settings'
       callback: 'application:show-settings'
       tooltip: 'Show Settings'
+
+    @toolBar.addButton
+      icon: 'tools'
+      callback: 'application:open-your-config'
+      tooltip: 'Open Your Config'
 
     @toolBar.addButton
       icon: 'clock'
