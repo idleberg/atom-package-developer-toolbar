@@ -51,23 +51,23 @@ module.exports =
     @toolBar.addSpacer()
 
     @toolBar.addButton
-        icon: 'gear-a'
-        callback: 'window:toggle-dev-tools'
-        tooltip: 'Toggle Developer Tools'
-        iconset: 'ion'
+      icon: 'gear-a'
+      callback: 'window:toggle-dev-tools'
+      tooltip: 'Toggle Developer Tools'
+      iconset: 'ion'
 
     @toolBar.addButton
-        icon: 'settings'
-        callback: 'application:show-settings'
-        tooltip: 'Show Settings'
+      icon: 'settings'
+      callback: 'application:show-settings'
+      tooltip: 'Show Settings'
 
     @toolBar.addButton
-        icon: 'clock'
-        callback: 'window:run-package-specs'
-        tooltip: 'Run Package Specs'
+      icon: 'clock'
+      callback: 'window:run-package-specs'
+      tooltip: 'Run Package Specs'
 
     @toolBar.addButton
-        icon: 'refresh'
-        callback: 'window:reload'
-        tooltip: 'Reload Window'
-        iconset: 'ion'
+      icon: 'refresh'
+      callback: 'window:reload'
+      tooltip: 'Reload Window'
+      iconset: 'ion'
