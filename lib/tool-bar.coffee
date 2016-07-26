@@ -20,9 +20,10 @@ module.exports =
         iconset: 'ion'
 
       @toolBar.addButton
-        icon: 'paintcan'
+        icon: 'paintbrush'
         callback: 'package-generator:generate-syntax-theme'
         tooltip: 'Generate Syntax Theme'
+        iconset: 'ion'
 
     @toolBar.addSpacer()
 
