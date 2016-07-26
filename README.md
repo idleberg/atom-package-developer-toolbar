@@ -10,6 +10,8 @@
 
 A toolbar targeted at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
 
+![Screenshot](https://raw.githubusercontent.com/idleberg/atom-package-developer-toolbar/master/screenshot.png)
+
 ## Installation
 
 ### apm
