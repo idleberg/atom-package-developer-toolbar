@@ -7,8 +7,6 @@ module.exports =
   deactivate: ->
     @toolBar?.removeItems()
 
-  serialize: ->
-
   consumeToolBar: (toolBar) ->
     @toolBar = toolBar 'developer-tool-bar'
 
