@@ -40,6 +40,24 @@ $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-d
 
 Toggle and position the menu from the `Packages > Toolbar` menu.
 
+### Available Buttons
+
+* [Package Generator](https://atom.io/packages/package-generator)
+  * Generate Package
+  * Generate Syntax Theme
+
+* [Browse](https://atom.io/packages/browse)
+  * Open Configuration Folder
+  * Open Packages Folder
+  * Open Project Folder(s)
+  * Reveal File
+
+* Core Features
+  * Toggle Developer Tools
+  * Show Settings
+  * Run Package Specs
+  * Reload Window
+
 ## License
 
 This work is licensed under the [The MIT License](LICENSE.md).
