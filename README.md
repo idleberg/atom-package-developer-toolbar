@@ -10,6 +10,8 @@
 
 A toolbar targeted at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
 
+![Screenshot](https://raw.githubusercontent.com/idleberg/atom-package-developer-toolbar/master/screenshot.png)
+
 ## Installation
 
 ### apm
@@ -40,27 +42,21 @@ $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-d
 
 Toggle and position the menu from the `Packages > Toolbar` menu.
 
-### The tool-bar
+### Available Buttons
 
-![Screenshot](https://raw.githubusercontent.com/idleberg/atom-package-developer-toolbar/master/screenshot.png)
+* Generate Package¹
+* Generate Syntax Theme¹
+* Open Configuration Folder²
+* Open Packages Folder²
+* Open Project Folder(s)²
+* Reveal File²
+* Toggle Developer Tools
+* Show Settings
+* Run Package Specs
+* Reload Window
 
-Icons from left to right:
-
-* [Package Generator](https://atom.io/packages/package-generator)
-  * Generate Package
-  * Generate Syntax Theme
-
-* [Browse](https://atom.io/packages/browse)
-  * Open Configuration Folder
-  * Open Packages Folder
-  * Open Project Folder(s)
-  * Reveal File
-
-* Core Features
-  * Toggle Developer Tools
-  * Show Settings
-  * Run Package Specs
-  * Reload Window
+¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
+²⁾ provided by [browse](https://atom.io/packages/browse)  
 
 ## License
 
