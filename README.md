@@ -35,6 +35,10 @@ Clone repository as `package-developer-toolbar`:
 $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
 ```
 
+### Dependencies
+
+This package makes use of [atom-package-deps](https://github.com/steelbrain/package-deps) to automatically install additional packages it depends on. However, you *might* have to restart Atom in order to use them.
+
 ## Usage
 
 Toggle and position the menu from the `Packages > Toolbar` menu.
