@@ -64,6 +64,12 @@ module.exports =
       callback: 'application:open-your-config'
       tooltip: 'Open Your Config'
 
+    if atom.packages.loadedPackages['settings-view']
+      @toolBar.addButton
+        icon: 'cloud-download'
+        callback: 'settings-view:check-for-package-updates'
+        tooltip: 'Update Packages/Themes'
+
     @toolBar.addButton
       icon: 'clock'
       callback: 'window:run-package-specs'

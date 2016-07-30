@@ -58,6 +58,7 @@ Buttons from left to right:
 * Toggle Developer Tools
 * Show Settings
 * Open Your Config
+* Update Packages/Themes
 * Run Package Specs
 * Reload Window
 
