@@ -1,6 +1,23 @@
 meta = require '../package.json'
 
 module.exports =
+  config:
+    generatorTools:
+      title: "Show Generator Menu"
+      description: "Displays buttons to generate packages and themes"
+      type: 'boolean'
+      default: true
+    browseTools:
+      title: "Show Browse Menu"
+      description: "Displays buttons to browse files and folders, e.g. `Config Folder`, `Packages Folder`, `Current File`"
+      type: 'boolean'
+      default: true
+    devTools:
+      title: "Show Developer Menu"
+      description: "Display buttons for useful developer features, e.g. `Console`, `Settings`, `Config`, `Reload Window`, `Package Specs`"
+      type: 'boolean'
+      default: true
+
   activate: (state) ->
     require('atom-package-deps').install(meta.name)
 
@@ -10,7 +27,9 @@ module.exports =
   consumeToolBar: (toolBar) ->
     @toolBar = toolBar 'developer-tool-bar'
 
-    if atom.packages.loadedPackages['package-generator']
+
+
+    if atom.packages.loadedPackages['package-generator'] and atom.config.get('package-developer-toolbar.generatorTools') isnt false
       @toolBar.addButton
         icon: 'wand'
         callback: 'package-generator:generate-package'
@@ -25,7 +44,7 @@ module.exports =
 
     @toolBar.addSpacer()
 
-    if atom.packages.loadedPackages['browse']
+    if atom.packages.loadedPackages['browse'] and atom.config.get('package-developer-toolbar.browseTools') isnt false
       @toolBar.addButton
         icon: 'atom-original'
         callback: 'browse:configuration-folder'
@@ -49,34 +68,38 @@ module.exports =
 
     @toolBar.addSpacer()
 
-    @toolBar.addButton
-      icon: 'terminal'
-      callback: 'window:toggle-dev-tools'
-      tooltip: 'Toggle Developer Tools'
+    if atom.config.get('package-developer-toolbar.devTools') isnt false
 
-    @toolBar.addButton
-      icon: 'settings'
-      callback: 'application:show-settings'
-      tooltip: 'Show Settings'
-
-    @toolBar.addButton
-      icon: 'tools'
-      callback: 'application:open-your-config'
-      tooltip: 'Open Your Config'
-
-    if atom.packages.loadedPackages['settings-view']
       @toolBar.addButton
-        icon: 'cloud-download'
-        callback: 'settings-view:check-for-package-updates'
-        tooltip: 'Update Packages/Themes'
+        icon: 'terminal'
+        callback: 'window:toggle-dev-tools'
+        tooltip: 'Toggle Developer Tools'
 
-    @toolBar.addButton
-      icon: 'clock'
-      callback: 'window:run-package-specs'
-      tooltip: 'Run Package Specs'
+      @toolBar.addButton
+        icon: 'settings'
+        callback: 'application:show-settings'
+        tooltip: 'Show Settings'
 
-    @toolBar.addButton
-      icon: 'refresh'
-      callback: 'window:reload'
-      tooltip: 'Reload Window'
-      iconset: 'ion'
+      @toolBar.addButton
+        icon: 'tools'
+        callback: 'application:open-your-config'
+        tooltip: 'Open Your Config'
+
+      if atom.packages.loadedPackages['settings-view']
+        @toolBar.addButton
+          icon: 'cloud-download'
+          callback: 'settings-view:check-for-package-updates'
+          tooltip: 'Update Packages/Themes'
+
+      @toolBar.addButton
+        icon: 'clock'
+        callback: 'window:run-package-specs'
+        tooltip: 'Run Package Specs'
+
+      @toolBar.addButton
+        icon: 'refresh'
+        callback: 'window:reload'
+        tooltip: 'Reload Window'
+        iconset: 'ion'
+
+      @toolBar.addSpacer()
