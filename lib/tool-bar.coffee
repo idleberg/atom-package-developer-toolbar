@@ -100,7 +100,7 @@ module.exports =
         @toolBar.addButton
           icon: 'dashboard'
           callback: 'timecop:view'
-          tooltip: 'Timecop'
+          tooltip: 'View Timecop'
 
       @toolBar.addButton
         icon: 'clock'
