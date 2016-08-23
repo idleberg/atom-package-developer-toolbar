@@ -27,8 +27,6 @@ module.exports =
   consumeToolBar: (toolBar) ->
     @toolBar = toolBar 'developer-tool-bar'
 
-
-
     if atom.packages.loadedPackages['package-generator'] and atom.config.get('package-developer-toolbar.generatorTools') isnt false
       @toolBar.addButton
         icon: 'wand'
