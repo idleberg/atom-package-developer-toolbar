@@ -9,12 +9,12 @@ module.exports =
       default: true
     browseTools:
       title: "Show Browse Menu"
-      description: "Displays buttons to browse files and folders, e.g. `Config Folder`, `Packages Folder`, `Current File`"
+      description: "Displays buttons to browse files and folders, e.g. `Config Folder`, `Packages Folder`, `Current File` etc."
       type: 'boolean'
       default: true
     devTools:
       title: "Show Developer Menu"
-      description: "Display buttons for useful developer features, e.g. `Console`, `Settings`, `Config`, `Reload Window`, `Package Specs`"
+      description: "Display buttons for useful developer features, e.g. `Console`, , `Settings`, `Config`, `Reload Window`, `Package Specs` etc."
       type: 'boolean'
       default: true
 
@@ -76,6 +76,11 @@ module.exports =
         tooltip: 'Toggle Developer Tools'
 
       @toolBar.addButton
+        icon: 'circuit-board'
+        callback: 'application:open-dev'
+        tooltip: 'Open in Dev Mode'
+
+      @toolBar.addButton
         icon: 'settings'
         callback: 'application:show-settings'
         tooltip: 'Show Settings'
@@ -90,6 +95,12 @@ module.exports =
           icon: 'cloud-download'
           callback: 'settings-view:check-for-package-updates'
           tooltip: 'Update Packages/Themes'
+
+      if atom.packages.loadedPackages['timecop']
+        @toolBar.addButton
+          icon: 'dashboard'
+          callback: 'timecop:view'
+          tooltip: 'Timecop'
 
       @toolBar.addButton
         icon: 'clock'
