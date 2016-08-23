@@ -60,12 +60,13 @@ Buttons from left to right:
 * Show Settings
 * Open Your Config
 * Update Packages/Themes
-* View Timecop
+* View Timecop³
 * Run Package Specs
 * Reload Window
 
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
 ²⁾ provided by [browse](https://atom.io/packages/browse)  
+³⁾ provided by [timecop](https://atom.io/packages/timecop)  
 
 ## License
 
