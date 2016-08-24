@@ -55,18 +55,20 @@ Buttons from left to right:
 * Open Packages Folder²
 * Open Project Folder(s)²
 * Reveal File²
-* Toggle Developer Tools
-* Open in Dev Mode
 * Show Settings
 * Open Your Config
 * Update Packages/Themes
-* View Timecop³
+* Toggle Developer Tools
+* Open in Dev Mode
+* Timecop³
+* Deprecation Cop⁴
 * Run Package Specs
 * Reload Window
 
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
 ²⁾ provided by [browse](https://atom.io/packages/browse)  
 ³⁾ provided by [timecop](https://atom.io/packages/timecop)  
+⁴⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
 
 ## License
 

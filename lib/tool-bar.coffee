@@ -7,16 +7,25 @@ module.exports =
       description: "Displays buttons to generate packages and themes"
       type: 'boolean'
       default: true
+      order: 1
     browseTools:
       title: "Show Browse Menu"
       description: "Displays buttons to browse files and folders, e.g. `Config Folder`, `Packages Folder`, `Current File` etc."
       type: 'boolean'
       default: true
-    devTools:
-      title: "Show Developer Menu"
-      description: "Display buttons for useful developer features, e.g. `Console`, , `Settings`, `Config`, `Reload Window`, `Package Specs` etc."
+      order: 2
+    settings:
+      title: "Show Settings Menu"
+      description: "Display buttons for Atom settings"
       type: 'boolean'
       default: true
+      order: 3
+    devTools:
+      title: "Show Developer Menu"
+      description: "Display buttons for useful developer features, e.g. `Console`, `Reload Window`, `Timecop`, `Package Specs` etc."
+      type: 'boolean'
+      default: true
+      order: 4
 
   activate: (state) ->
     require('atom-package-deps').install(meta.name)
@@ -66,17 +75,7 @@ module.exports =
 
     @toolBar.addSpacer()
 
-    if atom.config.get('package-developer-toolbar.devTools') isnt false
-
-      @toolBar.addButton
-        icon: 'terminal'
-        callback: 'window:toggle-dev-tools'
-        tooltip: 'Toggle Developer Tools'
-
-      @toolBar.addButton
-        icon: 'circuit-board'
-        callback: 'application:open-dev'
-        tooltip: 'Open in Dev Mode'
+    if atom.config.get('package-developer-toolbar.settings') isnt false
 
       @toolBar.addButton
         icon: 'settings'
@@ -94,11 +93,31 @@ module.exports =
           callback: 'settings-view:check-for-package-updates'
           tooltip: 'Update Packages/Themes'
 
+      @toolBar.addSpacer()
+
+    if atom.config.get('package-developer-toolbar.devTools') isnt false
+
+      @toolBar.addButton
+        icon: 'terminal'
+        callback: 'window:toggle-dev-tools'
+        tooltip: 'Toggle Developer Tools'
+
+      @toolBar.addButton
+        icon: 'circuit-board'
+        callback: 'application:open-dev'
+        tooltip: 'Open in Dev Mode'
+
       if atom.packages.loadedPackages['timecop']
         @toolBar.addButton
           icon: 'dashboard'
           callback: 'timecop:view'
-          tooltip: 'View Timecop'
+          tooltip: 'Timecop'
+
+      if atom.packages.loadedPackages['deprecation-cop']
+        @toolBar.addButton
+          icon: 'alert'
+          callback: 'deprecation-cop:view'
+          tooltip: 'Deprecation Cop'
 
       @toolBar.addButton
         icon: 'clock'
