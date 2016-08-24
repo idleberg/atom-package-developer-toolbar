@@ -65,12 +65,10 @@ Buttons from left to right:
 * Run Package Specs
 * Reload Window
 
-<small>
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
 ²⁾ provided by [browse](https://atom.io/packages/browse)  
 ³⁾ provided by [timecop](https://atom.io/packages/timecop)  
 ⁴⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
-</small>
 
 ## License
 
