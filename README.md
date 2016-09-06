@@ -5,7 +5,7 @@
 [![apm](https://img.shields.io/apm/dm/package-developer-toolbar.svg?style=flat-square)](https://atom.io/packages/package-developer-toolbar)
 [![Travis](https://img.shields.io/travis/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-package-developer-toolbar)
 [![David](https://img.shields.io/david/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://david-dm.org/idleberg/atom-package-developer-toolbar#info=dependencies)
-[![David](https://img.shields.io/david/dev/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://david-dm.org/idleberg/atom-package-developer-toolbar#info=devDependencies)
+[![David](https://img.shields.io/david/dev/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://david-dm.org/idleberg/atom-package-developer-toolbar?type=dev)
 
 A toolbar aimed at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
 
