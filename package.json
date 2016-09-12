@@ -3,7 +3,6 @@
   "version": "0.7.0",
   "description": "A toolbar aimed at developers of Atom packages and syntax themes",
   "license": "MIT",
-  "main": "./lib/tool-bar",
   "repository": {
     "type": "git",
     "url": "https://github.com/idleberg/atom-package-developer-toolbar"
@@ -13,6 +12,7 @@
     "tool-bar",
     "package developer"
   ],
+  "main": "./lib/tool-bar",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
