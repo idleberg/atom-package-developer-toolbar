@@ -102,10 +102,20 @@ module.exports =
         callback: 'window:toggle-dev-tools'
         tooltip: 'Toggle Developer Tools'
 
+      if atom.packages.loadedPackages['open-in-developer-mode']
+        callback = 'open-in-developer-mode:toggle'
+        if atom.inDevMode()
+          tooltip = 'Re-open file in normal mode'
+        else
+          tooltip = 'Re-open file in Dev Mode'
+      else
+          callback = 'application:open-dev'
+          tooltip = 'Open in Dev Mode'
+
       @toolBar.addButton
-        icon: 'circuit-board'
-        callback: 'application:open-dev'
-        tooltip: 'Open in Dev Mode'
+        icon: 'code'
+        callback: callback
+        tooltip: tooltip
 
       if atom.packages.loadedPackages['timecop']
         @toolBar.addButton

@@ -59,7 +59,7 @@ Buttons from left to right:
 * Open Your Config
 * Update Packages/Themes
 * Toggle Developer Tools
-* Open in Dev Mode
+* Re-open file in Dev Mode⁵ / Open in Dev Mode
 * Timecop³
 * Deprecation Cop⁴
 * Run Package Specs
@@ -69,6 +69,7 @@ Buttons from left to right:
 ²⁾ provided by [browse](https://atom.io/packages/browse)  
 ³⁾ provided by [timecop](https://atom.io/packages/timecop)  
 ⁴⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
+⁵⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)  
 
 ## License
 
@@ -77,6 +78,3 @@ This work is licensed under the [The MIT License](LICENSE.md).
 ## Donate
 
 You are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/atom-package-developer-toolbar) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
-
-[osascript]: https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/osascript.1.html
-[osacompile]: https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/osacompile.1.html
