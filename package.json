@@ -18,6 +18,7 @@
   },
   "package-deps": [
     "browse",
+    "open-in-developer-mode",
     "package-generator",
     "tool-bar"
   ],
