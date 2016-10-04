@@ -109,8 +109,8 @@ module.exports =
         else
           tooltip = 'Re-open file in Dev Mode'
       else
-          callback = 'application:open-dev'
-          tooltip = 'Open in Dev Mode'
+        callback = 'application:open-dev'
+        tooltip = 'Open in Dev Mode'
 
       @toolBar.addButton
         icon: 'code'
