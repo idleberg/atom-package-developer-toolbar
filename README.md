@@ -35,6 +35,13 @@ Clone repository as `package-developer-toolbar`:
 $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
 ```
 
+Install Node dependencies:
+
+```bash
+$ cd package-developer-toolbar
+$ yarn || npm install
+```
+
 ### Dependencies
 
 This package makes use of [atom-package-deps](https://github.com/steelbrain/package-deps) to automatically install additional packages it depends on. However, you *might* have to restart Atom in order to use them.
