@@ -35,10 +35,9 @@ Clone repository as `package-developer-toolbar`:
 $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
 ```
 
-Install Node dependencies:
+Inside the cloned directory, install Node dependencies:
 
 ```bash
-$ cd package-developer-toolbar
 $ yarn || npm install
 ```
 
