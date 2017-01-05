@@ -17,7 +17,7 @@ Install `package-developer-toolbar` from Atom's [Package Manager](http://flight-
 
 `$ apm install package-developer-toolbar`
 
-### GitHub
+### Using Git
 
 Change to your Atom packages directory:
 
