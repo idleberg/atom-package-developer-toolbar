@@ -49,6 +49,12 @@ module.exports =
         tooltip: 'Generate Syntax Theme'
         iconset: 'ion'
 
+      @toolBar.addButton
+        icon: 'folder'
+        callback: 'open-package:toggle'
+        tooltip: 'Open Package'
+        iconset: 'ion'
+
     @toolBar.addSpacer()
 
     if atom.packages.loadedPackages['browse'] and atom.config.get('package-developer-toolbar.browseTools') isnt false
