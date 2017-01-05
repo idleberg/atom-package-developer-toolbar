@@ -57,25 +57,27 @@ Buttons from left to right:
 
 * Generate Package¹
 * Generate Syntax Theme¹
-* Open Configuration Folder²
-* Open Packages Folder²
-* Open Project Folder(s)²
-* Reveal File²
+* Open Package²
+* Open Configuration Folder³
+* Open Packages Folder³
+* Open Project Folder(s)³
+* Reveal File³
 * Show Settings
 * Open Your Config
 * Update Packages/Themes
 * Toggle Developer Tools
-* Re-open file in Dev Mode⁵ / Open in Dev Mode
-* Timecop³
-* Deprecation Cop⁴
+* Re-open file in Dev Mode⁶ / Open in Dev Mode
+* Timecop⁴
+* Deprecation Cop⁵
 * Run Package Specs
 * Reload Window
 
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
-²⁾ provided by [browse](https://atom.io/packages/browse)  
-³⁾ provided by [timecop](https://atom.io/packages/timecop)  
-⁴⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
-⁵⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)  
+²⁾ provided by [open-package](https://atom.io/packages/open-package)  
+³⁾ provided by [browse](https://atom.io/packages/browse)  
+⁴⁾ provided by [timecop](https://atom.io/packages/timecop)  
+⁵⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
+⁶⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)  
 
 ## License
 
