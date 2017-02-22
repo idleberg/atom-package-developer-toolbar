@@ -70,6 +70,7 @@ Buttons from left to right:
 * Timecop⁴
 * Deprecation Cop⁵
 * Run Package Specs
+* Satisfy Dependencies⁷
 * Reload Window
 
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
@@ -78,6 +79,7 @@ Buttons from left to right:
 ⁴⁾ provided by [timecop](https://atom.io/packages/timecop)  
 ⁵⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
 ⁶⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)  
+⁷⁾ provided by [satisfy-dependencies](https://atom.io/packages/satisfy-dependencies)  
 
 ## License
 
