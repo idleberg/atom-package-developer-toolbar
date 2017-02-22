@@ -125,7 +125,7 @@ module.exports =
 
       if atom.packages.loadedPackages['timecop']
         @toolBar.addButton
-          icon: 'dashboard'
+          icon: 'clock'
           callback: 'timecop:view'
           tooltip: 'Timecop'
 
@@ -136,9 +136,15 @@ module.exports =
           tooltip: 'Deprecation Cop'
 
       @toolBar.addButton
-        icon: 'clock'
+        icon: 'eye'
         callback: 'window:run-package-specs'
         tooltip: 'Run Package Specs'
+
+      if atom.packages.loadedPackages['satisfy-dependencies']
+        @toolBar.addButton
+          icon: 'checklist'
+          callback: 'satisfy-dependencies:all'
+          tooltip: 'Satisfy Dependencies'
 
       @toolBar.addButton
         icon: 'refresh'
