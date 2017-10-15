@@ -71,8 +71,8 @@ Buttons from left to right:
 * Deprecation Cop⁵
 * Run Package Specs
 * Satisfy Dependencies⁷
-* Open localStorage
-* Reload Window⁸
+* Open localStorage⁸
+* Reload Window
 
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)
 ²⁾ provided by [open-package](https://atom.io/packages/open-package)
