@@ -71,15 +71,17 @@ Buttons from left to right:
 * Deprecation Cop⁵
 * Run Package Specs
 * Satisfy Dependencies⁷
-* Reload Window
+* Open localStorage
+* Reload Window⁸
 
-¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
-²⁾ provided by [open-package](https://atom.io/packages/open-package)  
-³⁾ provided by [browse](https://atom.io/packages/browse)  
-⁴⁾ provided by [timecop](https://atom.io/packages/timecop)  
-⁵⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
-⁶⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)  
-⁷⁾ provided by [satisfy-dependencies](https://atom.io/packages/satisfy-dependencies)  
+¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)
+²⁾ provided by [open-package](https://atom.io/packages/open-package)
+³⁾ provided by [browse](https://atom.io/packages/browse)
+⁴⁾ provided by [timecop](https://atom.io/packages/timecop)
+⁵⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)
+⁶⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)
+⁷⁾ provided by [satisfy-dependencies](https://atom.io/packages/satisfy-dependencies)
+⁸⁾ provided by [local-storage](https://atom.io/packages/local-storage)
 
 ## License
 
