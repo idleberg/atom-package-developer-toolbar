@@ -149,7 +149,7 @@ module.exports =
       if atom.packages.loadedPackages['local-storage']
         @toolBar.addButton
           icon: 'database'
-          callback: 'local-storage:open'
+          callback: 'local-storage:open-item'
           tooltip: 'Open localStorage'
 
       @toolBar.addButton
