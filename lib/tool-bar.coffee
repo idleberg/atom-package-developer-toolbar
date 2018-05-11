@@ -144,7 +144,7 @@ module.exports =
         @toolBar.addButton
           icon: 'checklist'
           callback: 'satisfy-dependencies:all'
-          tooltip: 'Open'
+          tooltip: 'Satisfy Dependencies'
 
       if atom.packages.loadedPackages['local-storage']
         @toolBar.addButton
