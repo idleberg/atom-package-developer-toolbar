@@ -37,9 +37,9 @@
   },
   "devDependencies": {
     "coffeelint-stylish": "^0.1.2",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "^4.0.0",
     "gulp-coffeelint": "^0.6.0",
-    "gulp-debug": "^3.1.0",
+    "gulp-debug": "^4.0.0",
     "gulp-jsonlint": "^1.2.0"
   },
   "scripts": {
