@@ -28,3 +28,7 @@ export const config = {
     order: 4
   }
 };
+
+export function getConfig(key) {
+  return atom.config.get(`package-developer-toolbar.${key}`);
+}

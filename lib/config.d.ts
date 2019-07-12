@@ -28,3 +28,4 @@ export declare const config: {
         order: number;
     };
 };
+export declare function getConfig(key: any): any;

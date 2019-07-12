@@ -1,4 +1,5 @@
 // Dependencies
+import { getConfig } from './config';
 import { install } from 'atom-package-deps';
 
 // Variables
@@ -24,7 +25,7 @@ export function consumeToolBar(getToolBar) {
   // @ts-ignore
   const loadedPackages: any = Object.keys(atom.packages.loadedPackages);
 
-  if (loadedPackages.includes('package-generator') && (atom.config.get('package-developer-toolbar.generatorTools') !== false)) {
+  if (loadedPackages.includes('package-generator') && (getConfig('generatorTools') !== false)) {
     toolBar.addButton({
       icon: 'wand',
       callback: 'package-generator:generate-package',
@@ -49,7 +50,7 @@ export function consumeToolBar(getToolBar) {
 
   toolBar.addSpacer();
 
-  if (loadedPackages.includes('browse') && (atom.config.get('package-developer-toolbar.browseTools') !== false)) {
+  if (loadedPackages.includes('browse') && (getConfig('browseTools') !== false)) {
     toolBar.addButton({
       icon: 'atom-original',
       callback: 'browse:configuration-folder',
@@ -78,8 +79,7 @@ export function consumeToolBar(getToolBar) {
 
   toolBar.addSpacer();
 
-  if (atom.config.get('package-developer-toolbar.settings') !== false) {
-
+  if (getConfig('settings') !== false) {
     toolBar.addButton({
       icon: 'settings',
       callback: 'application:show-settings',
@@ -103,8 +103,7 @@ export function consumeToolBar(getToolBar) {
     toolBar.addSpacer();
   }
 
-  if (atom.config.get('package-developer-toolbar.devTools') !== false) {
-
+  if (getConfig('devTools') !== false) {
     let callback, tooltip;
     toolBar.addButton({
       icon: 'terminal',
