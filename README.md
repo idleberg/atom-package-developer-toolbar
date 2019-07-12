@@ -1,11 +1,10 @@
 # Package Developer Toolbar
 
-[![apm](https://img.shields.io/apm/l/package-developer-toolbar.svg?style=flat-square)](https://atom.io/packages/package-developer-toolbar)
-[![apm](https://img.shields.io/apm/v/package-developer-toolbar.svg?style=flat-square)](https://atom.io/packages/package-developer-toolbar)
-[![apm](https://img.shields.io/apm/dm/package-developer-toolbar.svg?style=flat-square)](https://atom.io/packages/package-developer-toolbar)
-[![Travis](https://img.shields.io/travis/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-package-developer-toolbar)
-[![David](https://img.shields.io/david/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://david-dm.org/idleberg/atom-package-developer-toolbar#info=dependencies)
-[![David](https://img.shields.io/david/dev/idleberg/atom-package-developer-toolbar.svg?style=flat-square)](https://david-dm.org/idleberg/atom-package-developer-toolbar?type=dev)
+[![apm](https://flat.badgen.net/apm/license/package-developer-toolbar)](https://atom.io/packages/package-developer-toolbar)
+[![apm](https://flat.badgen.net/apm/v/package-developer-toolbar)](https://atom.io/packages/package-developer-toolbar)
+[![apm](https://flat.badgen.net/apm/dl/package-developer-toolbar)](https://atom.io/packages/package-developer-toolbar)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-package-developer-toolbar)](https://circleci.com/gh/idleberg/atom-package-developer-toolbar)
+[![David](https://flat.badgen.net/david/dep/idleberg/atom-package-developer-toolbar)](https://david-dm.org/idleberg/atom-package-developer-toolbar)
 
 A toolbar aimed at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
 
@@ -85,7 +84,7 @@ Buttons from left to right:
 
 ## License
 
-This work is licensed under the [The MIT License](LICENSE.md).
+This work is licensed under the [The MIT License](https://opensource.org/licenses/MIT).
 
 ## Donate
 

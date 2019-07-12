@@ -1,20 +1,38 @@
 {
   "name": "package-developer-toolbar",
-  "version": "0.11.1",
+  "main": "./lib/package-developer-toolbar",
+  "version": "0.12.0",
   "description": "A toolbar aimed at developers of Atom packages and syntax themes",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/idleberg/atom-package-developer-toolbar"
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode none --watch",
+    "lint": "tslint --project ./",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "toolbar",
     "tool-bar",
     "package developer"
   ],
-  "main": "./lib/tool-bar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idleberg/atom-package-developer-toolbar"
+  },
+  "homepage": "https://atom.io/packages/package-developer-toolbar",
+  "bugs": {
+    "url": "https://github.com/idleberg/atom-package-developer-toolbar/issues"
+  },
+  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
   },
   "package-deps": [
     "browse",
@@ -25,25 +43,22 @@
     "satisfy-dependencies",
     "tool-bar"
   ],
-  "consumedServices": {
-    "tool-bar": {
-      "versions": {
-        "^0 || ^1": "consumeToolBar"
-      }
-    }
-  },
   "dependencies": {
-    "atom-package-deps": "^4.6.2"
+    "atom-package-deps": "^5.1.0"
   },
   "devDependencies": {
-    "coffeelint-stylish": "^0.1.2",
-    "gulp": "^4.0.0",
-    "gulp-coffeelint": "^0.6.0",
-    "gulp-debug": "^4.0.0",
-    "gulp-jsonlint": "^1.2.0",
-    "husky": "^0.14.3"
+    "@types/atom": "^1.36.1",
+    "@types/node": "^12.6.2",
+    "husky": "^3.0.0",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
   },
-  "scripts": {
-    "test": "gulp lint"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
