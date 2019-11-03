@@ -25,26 +25,26 @@ export function consumeToolBar(getToolBar) {
   // @ts-ignore
   const loadedPackages: any = Object.keys(atom.packages.loadedPackages);
 
-  if (loadedPackages.includes('package-generator') && (getConfig('generatorTools') !== false)) {
-    toolBar.addButton({
-      icon: 'wand',
+  if (loadedPackages.includes('open-package') && (getConfig('generatorTools') !== false)) {
+     toolBar.addButton({
+      icon: 'auto-fix',
       callback: 'package-generator:generate-package',
       tooltip: 'Generate Package',
-      iconset: 'ion'
+      iconset: 'mdi'
     });
 
     toolBar.addButton({
-      icon: 'paintbrush',
+      icon: 'brush',
       callback: 'package-generator:generate-syntax-theme',
       tooltip: 'Generate Syntax Theme',
-      iconset: 'ion'
+      iconset: 'mdi'
     });
 
     toolBar.addButton({
-      icon: 'folder',
+      icon: 'folder-plus',
       callback: 'open-package:toggle',
       tooltip: 'Open Package',
-      iconset: 'ion'
+      iconset: 'mdi'
     });
   }
 
@@ -52,28 +52,31 @@ export function consumeToolBar(getToolBar) {
 
   if (loadedPackages.includes('browse') && (getConfig('browseTools') !== false)) {
     toolBar.addButton({
-      icon: 'atom-original',
+      icon: 'atom',
       callback: 'browse:configuration-folder',
       tooltip: 'Open Configuration Folder',
-      iconset: 'devicon'
+      iconset: 'mdi'
     });
 
     toolBar.addButton({
-      icon: 'package',
+      icon: 'dropbox',
       callback: 'browse:packages-folder',
-      tooltip: 'Open Packages Folder'
+      tooltip: 'Open Packages Folder',
+      iconset: 'mdi'
     });
 
     toolBar.addButton({
-      icon: 'file-symlink-directory',
+      icon: 'folder-move',
       callback: 'browse:project-folders',
-      tooltip: 'Open Project Folder(s)'
+      tooltip: 'Open Project Folder(s)',
+      iconset: 'mdi'
     });
 
     toolBar.addButton({
-      icon: 'file-symlink-file',
+      icon: 'file-move',
       callback: 'browse:reveal-file',
-      tooltip: 'Reveal File'
+      tooltip: 'Reveal File',
+      iconset: 'mdi'
     });
   }
 
@@ -81,22 +84,32 @@ export function consumeToolBar(getToolBar) {
 
   if (getConfig('settings') !== false) {
     toolBar.addButton({
-      icon: 'settings',
+      icon: 'tune',
       callback: 'application:show-settings',
-      tooltip: 'Show Settings'
+      tooltip: 'Show Settings',
+      iconset: 'mdi'
     });
 
     toolBar.addButton({
-      icon: 'tools',
+      icon: 'wrench',
       callback: 'application:open-your-config',
-      tooltip: 'Open Your Config'
+      tooltip: 'Open Your Config',
+      iconset: 'mdi'
     });
 
     if (loadedPackages.includes('settings-view')) {
       toolBar.addButton({
+        icon: 'plus',
+        callback: 'settings-view:install-packages-and-themes',
+        tooltip: 'Install Packages/Themes',
+        iconset: 'mdi'
+      });
+
+      toolBar.addButton({
         icon: 'cloud-download',
         callback: 'settings-view:check-for-package-updates',
-        tooltip: 'Update Packages/Themes'
+        tooltip: 'Update Packages/Themes',
+        iconset: 'mdi'
       });
     }
 
@@ -104,36 +117,35 @@ export function consumeToolBar(getToolBar) {
   }
 
   if (getConfig('devTools') !== false) {
-    let callback, tooltip;
     toolBar.addButton({
-      icon: 'terminal',
+      icon: 'console',
       callback: 'window:toggle-dev-tools',
-      tooltip: 'Toggle Developer Tools'
+      tooltip: 'Toggle Developer Tools',
+      iconset: 'mdi'
     });
 
     if (loadedPackages.includes('open-in-developer-mode')) {
-      callback = 'open-in-developer-mode:toggle';
-      if (atom.inDevMode()) {
-        tooltip = 'Re-open file in normal mode';
-      } else {
-        tooltip = 'Re-open file in Dev Mode';
-      }
+      toolBar.addButton({
+        icon: 'xml',
+        callback: 'open-in-developer-mode:toggle',
+        tooltip: (atom.inDevMode()) ? 'Re-open file in normal mode' : 'Re-open file in Dev Mode',
+        iconset: 'mdi'
+      });
     } else {
-      callback = 'application:open-dev';
-      tooltip = 'Open in Dev Mode';
+      toolBar.addButton({
+        icon: 'xml',
+        callback: 'application:open-dev',
+        tooltip: 'Open in Dev Mode',
+        iconset: 'mdi'
+      });
     }
 
-    toolBar.addButton({
-      icon: 'code',
-      callback,
-      tooltip
-    });
-
-    if (loadedPackages.includes('timecop')) {
+    if (loadedPackages.includes('timecop') || loadedPackages.includes('timecop-2')) {
       toolBar.addButton({
-        icon: 'clock',
+        icon: 'av-timer',
         callback: 'timecop:view',
-        tooltip: 'Timecop'
+        tooltip: 'Timecop',
+        iconset: 'mdi'
       });
     }
 
@@ -141,21 +153,24 @@ export function consumeToolBar(getToolBar) {
       toolBar.addButton({
         icon: 'alert',
         callback: 'deprecation-cop:view',
-        tooltip: 'Deprecation Cop'
+        tooltip: 'Deprecation Cop',
+        iconset: 'mdi'
       });
     }
 
     toolBar.addButton({
-      icon: 'eye',
+      icon: 'test-tube',
       callback: 'window:run-package-specs',
-      tooltip: 'Run Package Specs'
+      tooltip: 'Run Package Specs',
+      iconset: 'mdi'
     });
 
     if (loadedPackages.includes('satisfy-dependencies')) {
       toolBar.addButton({
-        icon: 'checklist',
+        icon: 'clipboard-check-outline',
         callback: 'satisfy-dependencies:all',
-        tooltip: 'Satisfy Dependencies'
+        tooltip: 'Satisfy Dependencies',
+        iconset: 'mdi'
       });
     }
 
@@ -163,15 +178,16 @@ export function consumeToolBar(getToolBar) {
       toolBar.addButton({
         icon: 'database',
         callback: 'local-storage:open-item',
-        tooltip: 'Open localStorage'
+        tooltip: 'Open localStorage',
+        iconset: 'mdi'
       });
     }
 
     toolBar.addButton({
-      icon: 'refresh',
+      icon: 'reload',
       callback: 'window:reload',
       tooltip: 'Reload Window',
-      iconset: 'ion'
+      iconset: 'mdi'
     });
 
     return toolBar.addSpacer();
