@@ -143,7 +143,7 @@ export function consumeToolBar(getToolBar) {
     if (loadedPackages.includes('timecop') || loadedPackages.includes('timecop-2')) {
       toolBar.addButton({
         icon: 'av-timer',
-        callback: 'timecop:view',
+        callback: loadedPackages.includes('timecop-2') ? 'timecop-2:view' : 'timecop:view',
         tooltip: 'Timecop',
         iconset: 'mdi'
       });
