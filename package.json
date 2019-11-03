@@ -1,7 +1,7 @@
 {
   "name": "package-developer-toolbar",
   "main": "./lib/package-developer-toolbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A toolbar aimed at developers of Atom packages and syntax themes",
   "scripts": {
     "build": "webpack --mode production",
