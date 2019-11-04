@@ -63,6 +63,7 @@ Buttons from left to right:
 * Reveal File³
 * Show Settings
 * Open Your Config
+* Install Packages/Themes
 * Update Packages/Themes
 * Toggle Developer Tools
 * Re-open file in Dev Mode⁶ / Open in Dev Mode
@@ -76,7 +77,7 @@ Buttons from left to right:
 ¹⁾ provided by [package-generator](https://atom.io/packages/package-generator)  
 ²⁾ provided by [open-package](https://atom.io/packages/open-package)  
 ³⁾ provided by [browse](https://atom.io/packages/browse)  
-⁴⁾ provided by [timecop](https://atom.io/packages/timecop)  
+⁴⁾ provided by [timecop](https://atom.io/packages/timecop) or [timecop-2](https://atom.io/packages/timecop-2)  
 ⁵⁾ provided by [deprecation-cop](https://atom.io/packages/deprecation-cop)  
 ⁶⁾ provided by [open-in-developer-mode](https://atom.io/packages/open-in-developer-mode)  
 ⁷⁾ provided by [satisfy-dependencies](https://atom.io/packages/satisfy-dependencies)  
