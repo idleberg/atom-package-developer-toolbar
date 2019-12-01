@@ -26,6 +26,13 @@ export const config = {
     type: 'boolean',
     default: true,
     order: 4
+  },
+  enableIdentify: {
+    title: 'Identify Panes & TextEditors',
+    description: 'Adds data attributes for editor and pane IDs to the respective HTML element',
+    type: 'boolean',
+    default: true,
+    order: 5
   }
 };
 

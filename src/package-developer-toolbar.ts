@@ -1,5 +1,6 @@
 // Dependencies
 import { getConfig } from './config';
+import identify from 'atom-identify';
 import { install } from 'atom-package-deps';
 
 // Variables
@@ -10,6 +11,10 @@ export { config } from './config';
 
 export async function activate() {
   install('package-developer-toolbar');
+
+  if (getConfig('enableIdentify')) {
+    identify();
+  }
 }
 
 export function deactivate() {
