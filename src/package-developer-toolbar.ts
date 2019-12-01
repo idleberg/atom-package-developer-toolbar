@@ -12,7 +12,7 @@ export { config } from './config';
 export async function activate() {
   install('package-developer-toolbar');
 
-  if (getConfig('enableIdentify')) {
+  if (getConfig('enableIdentify') === true) {
     identify();
   }
 }
