@@ -34,5 +34,12 @@ export declare const config: {
         default: boolean;
         order: number;
     };
+    enableTitleMode: {
+        title: string;
+        description: string;
+        type: string;
+        default: boolean;
+        order: number;
+    };
 };
 export declare function getConfig(key: any): any;
