@@ -1,7 +1,8 @@
 // Dependencies
 import { getConfig } from './config';
-import identify from 'atom-identify';
 import { install } from 'atom-package-deps';
+import identify from '@atxmtx/identify';
+import titleMode from '@atxmtx/title-mode';
 
 // Variables
 let toolBar;
@@ -14,6 +15,10 @@ export async function activate() {
 
   if (getConfig('enableIdentify') === true) {
     identify();
+  }
+
+  if (getConfig('enableTitleMode') === true) {
+    titleMode();
   }
 }
 

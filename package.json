@@ -47,18 +47,19 @@
     "tool-bar"
   ],
   "dependencies": {
-    "atom-identify": "^0.1.0",
+    "@atxmtx/identify": "^0.2.2",
+    "@atxmtx/title-mode": "^0.1.0",
     "atom-package-deps": "^5.1.0"
   },
   "devDependencies": {
-    "@types/atom": "^1.36.1",
-    "@types/node": "^12.12.14",
-    "husky": "^3.1.0",
+    "@types/atom": "^1.36.2",
+    "@types/node": "^13.7.4",
+    "husky": "^4.2.3",
     "ts-loader": "^6.2.1",
-    "tslint": "^5.20.1",
-    "typescript": "^3.7.2",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
   "husky": {
     "hooks": {

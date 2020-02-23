@@ -33,6 +33,13 @@ export const config = {
     type: 'boolean',
     default: true,
     order: 5
+  },
+  enableTitleMode: {
+    title: 'Mode Indicator',
+    description: 'Indicates whether current window is in developer mode',
+    type: 'boolean',
+    default: true,
+    order: 6
   }
 };
 
