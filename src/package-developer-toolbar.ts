@@ -1,8 +1,8 @@
 // Dependencies
 import { getConfig } from './config';
 import { install } from 'atom-package-deps';
-import identify from '@atxmtx/identify';
-import titleMode from '@atxmtx/title-mode';
+import identify from '@atxm/identify';
+import titleMode from '@atxm/title-mode';
 
 // Variables
 let toolBar;

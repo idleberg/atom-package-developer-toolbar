@@ -47,8 +47,8 @@
     "tool-bar"
   ],
   "dependencies": {
-    "@atxmtx/identify": "^0.2.2",
-    "@atxmtx/title-mode": "^0.1.0",
+    "@atxm/identify": "^0.2.3",
+    "@atxm/title-mode": "^0.1.1",
     "atom-package-deps": "^5.1.0"
   },
   "devDependencies": {
