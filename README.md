@@ -86,7 +86,3 @@ Buttons from left to right:
 ## License
 
 This work is licensed under the [The MIT License](https://opensource.org/licenses/MIT).
-
-## Donate
-
-You are welcome support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/atom-package-developer-toolbar) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
