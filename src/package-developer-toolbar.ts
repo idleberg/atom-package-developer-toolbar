@@ -32,7 +32,6 @@ export function deactivate() {
 export function consumeToolBar(getToolBar) {
   toolBar = getToolBar('developer-tool-bar');
 
-  // @ts-ignore
   const loadedPackages: any = Object.keys(atom.packages.loadedPackages);
 
   if (loadedPackages.includes('open-package') && (getConfig('generatorTools') !== false)) {
@@ -175,10 +174,13 @@ export function consumeToolBar(getToolBar) {
       iconset: 'mdi'
     });
 
-    if (loadedPackages.includes('satisfy-dependencies')) {
+    if (loadedPackages.includes('package-control') || loadedPackages.includes('satisfy-dependencies')) {
       toolBar.addButton({
         icon: 'clipboard-check-outline',
-        callback: 'satisfy-dependencies:all',
+        callback: (loadedPackages.includes('package-control')
+          ? 'package-control:satisfy-dependencies'
+          : 'satisfy-dependencies:all'
+        ),
         tooltip: 'Satisfy Dependencies',
         iconset: 'mdi'
       });
