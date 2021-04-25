@@ -2,6 +2,7 @@
 import { getConfig } from './config';
 import { install } from 'atom-package-deps';
 import identify from '@atxm/identify';
+import Logger from "./log";
 import titleMode from '@atxm/title-mode';
 
 // Variables
@@ -11,6 +12,8 @@ let toolBar;
 export { configSchema as config } from './config';
 
 export async function activate(): void {
+  Logger.log('Activating package');
+
   install('package-developer-toolbar');
 
   if (getConfig('enableIdentify') === true) {
@@ -23,6 +26,8 @@ export async function activate(): void {
 }
 
 export function deactivate(): void {
+  Logger.log('Deactivating package');
+
   if (toolBar) {
     toolBar.removeItems();
     toolBar = null;
@@ -30,6 +35,8 @@ export function deactivate(): void {
 }
 
 export function consumeToolBar(getToolBar: any): void {
+  Logger.log('Consuming tool-bar service');
+
   toolBar = getToolBar('developer-tool-bar');
 
   const loadedPackages: any = Object.keys(atom.packages.loadedPackages);
