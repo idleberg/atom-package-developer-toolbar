@@ -8,9 +8,9 @@ import titleMode from '@atxm/title-mode';
 let toolBar;
 
 // Exports
-export { config } from './config';
+export { configSchema as config } from './config';
 
-export async function activate() {
+export async function activate(): void {
   install('package-developer-toolbar');
 
   if (getConfig('enableIdentify') === true) {
@@ -22,14 +22,14 @@ export async function activate() {
   }
 }
 
-export function deactivate() {
+export function deactivate(): void {
   if (toolBar) {
     toolBar.removeItems();
     toolBar = null;
   }
 }
 
-export function consumeToolBar(getToolBar) {
+export function consumeToolBar(getToolBar: any): void {
   toolBar = getToolBar('developer-tool-bar');
 
   const loadedPackages: any = Object.keys(atom.packages.loadedPackages);
