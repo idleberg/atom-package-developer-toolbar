@@ -57,9 +57,14 @@
     {
       "name": "package-generator"
     },
-    {
-      "name": "satisfy-dependencies"
-    },
+    [
+      {
+        "name": "package-control"
+      },
+      {
+        "name": "satisfy-dependencies"
+      }
+    ],
     {
       "name": "tool-bar"
     }
