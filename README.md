@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/idleberg/atom-package-developer-toolbar?color=blue&style=for-the-badge)](https://github.com/idleberg/atom-package-developer-toolbar/blob/main/LICENSE)
 ![Release](https://img.shields.io/github/v/release/idleberg/atom-package-developer-toolbar?style=for-the-badge)
-![Downloads](https://img.shields.io/pulsar/dt/package-developer-toolbar?style=for-the-badge)
+![Downloads](https://img.shields.io/pulsar/dt/package-developer-toolbar?style=for-the-badge&color=slateblue)
 [![CI](https://img.shields.io/github/actions/workflow/status/idleberg/atom-package-developer-toolbar/default.yml?style=for-the-badge)](https://github.com/idleberg/atom-package-developer-toolbar/actions)
 
 A toolbar aimed at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
