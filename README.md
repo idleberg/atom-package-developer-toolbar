@@ -36,7 +36,7 @@ $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-d
 Inside the cloned directory, install Node dependencies:
 
 ```bash
-$ yarn || npm install
+$ apm install
 ```
 
 ### Dependencies
