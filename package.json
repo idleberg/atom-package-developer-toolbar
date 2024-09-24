@@ -1,7 +1,7 @@
 {
   "name": "package-developer-toolbar",
   "main": "./lib/package-developer-toolbar",
-  "version": "1.7.0",
+  "version": "1.4.0",
   "description": "A toolbar aimed at developers of Atom packages and syntax themes",
   "scripts": {
     "analyze": "source-map-explorer lib/**/*.js",
