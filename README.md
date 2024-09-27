@@ -34,12 +34,7 @@ Clone repository as `package-developer-toolbar`:
 
 ```bash
 $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
-```
-
-Inside the cloned directory, install Node dependencies:
-
-```bash
-$ apm install
+```all
 ```
 
 </details>
@@ -61,12 +56,6 @@ Clone repository as `package-developer-toolbar`:
 
 ```bash
 $ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
-```
-
-Inside the cloned directory, install Node dependencies:
-
-```bash
-$ ppm install
 ```
 
 </details>
