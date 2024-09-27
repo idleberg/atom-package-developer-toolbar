@@ -1,6 +1,6 @@
 import meta from '../package.json';
 
-const configSchema = {
+export const configSchema = {
   generatorTools: {
     title: 'Show Generator Menu',
     description: 'Displays buttons to generate packages and themes',
@@ -45,13 +45,8 @@ const configSchema = {
   }
 };
 
-function getConfig(key = ''): unknown {
+export function getConfig(key = ''): unknown {
   return key?.length
     ? atom.config.get(`${meta.name}.${key}`)
     : atom.config.get(`${meta.name}`);
 }
-
-export {
-  configSchema,
-  getConfig
-};
