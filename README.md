@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/pulsar/dt/package-developer-toolbar?style=for-the-badge&color=slateblue)](https://web.pulsar-edit.dev/packages/package-developer-toolbar)
 [![CI](https://img.shields.io/github/actions/workflow/status/idleberg/atom-package-developer-toolbar/default.yml?style=for-the-badge)](https://github.com/idleberg/atom-package-developer-toolbar/actions)
 
-A toolbar aimed at developers of Atom packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
+A toolbar aimed at developers of Atom/Pulsar packages and syntax themes, based on the [tool-bar](https://github.com/suda/tool-bar) package.
 
 ## Installation
 
