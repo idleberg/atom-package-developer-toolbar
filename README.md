@@ -1,4 +1,4 @@
-# Package Developer Toolbar
+# package-developer-toolbar
 
 [![License](https://img.shields.io/github/license/idleberg/atom-package-developer-toolbar?color=blue&style=for-the-badge)](https://github.com/idleberg/atom-package-developer-toolbar/blob/master/LICENSE)
 [![Release](https://img.shields.io/github/v/release/idleberg/atom-package-developer-toolbar?style=for-the-badge)](https://github.com/idleberg/atom-package-developer-toolbar/releases)
