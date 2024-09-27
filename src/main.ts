@@ -1,4 +1,4 @@
-// Dependencies
+// @ts-check
 import { getConfig } from './config';
 import { install } from 'atom-package-deps';
 import identify from '@atxm/identify';
@@ -11,7 +11,7 @@ let toolBar;
 // Exports
 export { configSchema as config } from './config';
 
-export async function activate(): void {
+export async function activate(): Promise<void> {
   Logger.log('Activating package');
 
   install('package-developer-toolbar');
@@ -34,12 +34,12 @@ export function deactivate(): void {
   }
 }
 
-export function consumeToolBar(getToolBar: any): void {
+export function consumeToolBar(getToolBar: (name: string) => any): void {
   Logger.log('Consuming tool-bar service');
 
   toolBar = getToolBar('developer-tool-bar');
 
-  const loadedPackages: any = Object.keys(atom.packages.loadedPackages);
+  const loadedPackages: string[] = atom.packages.getLoadedPackages().map((pkg) => pkg.name);
 
   if (loadedPackages.includes('open-package') && (getConfig('generatorTools') !== false)) {
      toolBar.addButton({
