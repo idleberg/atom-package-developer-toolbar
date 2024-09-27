@@ -1,4 +1,3 @@
-// @ts-check
 import { getConfig } from './config';
 import { install } from 'atom-package-deps';
 import identify from '@atxm/identify';
