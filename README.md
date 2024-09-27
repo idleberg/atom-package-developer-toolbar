@@ -18,33 +18,6 @@ Install `package-developer-toolbar` from Atom's [Package Manager](http://flight-
 ### Using Git
 
 <details>
-<summary><strong>Pulsar</strong></summary>
-
-Change to your Pulsar packages directory:
-
-```powershell
-# Windows
-$ cd %USERPROFILE%\.pulsar\packages
-
-# Linux & macOS
-$ cd ~/.pulsar/packages/
-```
-
-Clone repository as `package-developer-toolbar`:
-
-```bash
-$ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
-```
-
-Inside the cloned directory, install Node dependencies:
-
-```bash
-$ apm install
-```
-
-</details>
-
-<details>
 <summary><strong>Atom</strong></summary>
 
 Change to your Atom packages directory:
@@ -71,7 +44,32 @@ $ apm install
 
 </details>
 
+<details>
+<summary><strong>Pulsar</strong></summary>
 
+Change to your Pulsar packages directory:
+
+```powershell
+# Windows
+$ cd %USERPROFILE%\.pulsar\packages
+
+# Linux & macOS
+$ cd ~/.pulsar/packages/
+```
+
+Clone repository as `package-developer-toolbar`:
+
+```bash
+$ git clone https://github.com/idleberg/atom-package-developer-toolbar package-developer-toolbar
+```
+
+Inside the cloned directory, install Node dependencies:
+
+```bash
+$ apm install
+```
+
+</details>
 
 ### Dependencies
 
